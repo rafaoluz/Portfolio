@@ -1,0 +1,135 @@
+main .projetos {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 3.75rem;
+    width: 100%;
+    padding: 6.25rem 5%; /* Ajuste o preenchimento para telas menores */
+    background-color: #111;
+}
+main .projetos .listagem .p1 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	gap: 4%;
+}
+main .projetos .listagem .p1 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os elementos na horizontal */
+    text-align: center; /* Centraliza o texto */
+    width: 48%;
+    margin-bottom: 80px;
+}
+main .projetos .listagem .p1 div figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os elementos na horizontal */
+    border-left: 2px solid #00d2df;
+    margin-bottom: 1.5rem;
+    border-radius: 2px;
+    width: 100%;
+}
+main .projetos .listagem .p1 div figure img {
+    width: 100%;
+    max-width: 100%;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+main .projetos .listagem .p1 div h3,
+main .projetos .listagem .p1 div p,
+main .projetos .listagem .p1 div .tecnologias,
+main .projetos .listagem .p1 div a {
+    text-align: center; /* Centraliza o texto */
+}
+main .projetos .listagem .p1 div figure img:hover {
+	transform: scale(1.1); 
+    transition: 0.5s all ease;  
+}
+main .projetos .listagem .p1 div h3 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	line-height: 1.813rem;
+	margin-bottom: 1.875rem;
+}
+main .projetos .listagem .p1 div p {
+	font-weight: 300;
+	font-size: 1rem;
+	line-height: 1.625rem;
+	color: #c4c4c4;
+	margin-bottom: 1.625rem;
+}
+main .projetos .listagem .p1 div .tecnologias {
+	color: #00d2df;
+	font-size: 1rem;
+	font-weight: bold;
+	line-height: 1.5rem;
+}
+main .projetos .listagem .p1 div a {
+	color: #fff;
+	font-weight: 600;
+	font-size: 1rem;
+	line-height: 1.21rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+	width: 11.313rem;
+	border: 2px solid transparent;
+	padding: 0.5rem 1rem;
+	border-image: linear-gradient(45deg, #9358f7, #10d7e2 100%) 1;
+}
+
+main .projetos .listagem .p1 a:hover {
+	background: linear-gradient(to right, #10d7e2, #9358f7);
+}
+
+/* -------------------------- Responsivo ------------------------------------------ */ 
+
+/* Projetos Responsivo */
+@media screen and (max-width: 1274px) {
+    main .projetos {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1134px) {
+    main .projetos {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 876px) {
+    main .projetos {
+        padding: 6.25rem 5%;
+    }
+}
+
+@media screen and (max-width: 755px) {
+    main .projetos {
+        width: 90%;
+    }
+
+    main .projetos .listagem .p1 div {
+        width: 100%; /* Exibe os projetos em uma coluna */
+    }
+
+    main .projetos .listagem .p1 div figure img:hover {
+        transform: none;
+        transition: none;
+    }
+}
+
+/* Remova as regras redundantes para telas menores */
+@media screen and (max-width: 690px) {
+    main .projetos {
+        width: 90%;
+    }
+}
+
+
+
+

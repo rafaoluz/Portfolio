@@ -1,0 +1,85 @@
+main .contato_form {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: left;
+	flex-wrap: wrap;
+	color: #fff;
+	gap: 2.75rem;
+	width: 100%;
+	padding: 3.15rem 12.5%;
+	text-transform: uppercase;
+	padding-right: 60px;
+}
+
+.contato_form label{
+	display: flex;
+	color: #fff;
+	font-size: 18px;
+	line-height: 25px;
+	margin-bottom: 4px;
+	align-items: left;
+	justify-content: left;
+}
+
+.gray-light .contato_form label{
+	display: block;
+	color: #000;
+	font-size: 18px;
+	line-height: 25px;
+	margin-bottom: 4px;
+	align-items: left;
+}
+
+.contato_form input {
+	display: block;
+	width: 90%;
+	border: 2px solid;
+	border-image: linear-gradient(45deg, rgb(147, 88, 247), rgb(16, 215, 226) 100%) 1 / 1 / 0 stretch;
+	background: none;
+	padding:7px 7px;
+	margin-bottom: 10px;
+	outline: none;
+	font-size: 14px;
+	margin-bottom: 15px;
+	color: #fff;
+}
+
+.contato_form textarea {
+	display: block;
+	width: 90%;
+	height:120px;
+	border: 2px solid;
+	border-image: linear-gradient(45deg, rgb(147, 88, 247), rgb(16, 215, 226) 100%) 1 / 1 / 0 stretch;
+	background: none;
+	padding:7px 10px;
+	margin-bottom: 10px;
+	outline: none;
+	font-size: 14px;
+	color: #fff;
+}
+
+.contato_form .btn-preto {
+	background: none;
+	padding:10px 40px;
+	margin-top:20px;
+	border: 2px solid;
+	border-image: linear-gradient(45deg, rgb(147, 88, 247), rgb(16, 215, 226) 100%) 1 / 1 / 0 stretch;
+}
+
+.btn {
+    color: #fff;
+    font-size: 14px;
+	background-color: none;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    border-image: initial;
+    padding: 10px 30px;
+}
+
+.btn:hover {
+	color:#8a2be2;
+}

@@ -1,0 +1,235 @@
+main {
+	display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+	max-width: 100%;
+}
+
+main .sobreMim {
+	display: flex;
+	padding: 4.25rem 0 6.25rem 13.5%;
+	gap: 15%;
+	flex-wrap: wrap;
+	transition: all 0.5s;
+	width: 100%;
+    background-color: #111;
+}
+
+main .sobreMim .perfil img {
+	width: 23rem;
+	height: 23rem;
+	border-left: 4px solid #00d2df;
+	border-radius: 4px;
+	transition: all 0.5s;
+}
+
+main .sobreMim .perfil img:hover {
+    transform: scale(1.1); 
+    transition: 0.5s all ease;  
+}
+
+main .sobreMim .desc {
+	width: 40%;
+}
+
+main .sobreMim .desc h2 {
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 1.813rem;
+    margin-top: 1.2rem;
+	margin-bottom: 2.5rem;
+}
+
+main .sobreMim .desc h3 {
+	color: #fff;
+	font-size: 1.25rem;
+	font-weight: 500;
+	line-height: 1.5rem;
+	margin-bottom: 1.313rem;
+}
+
+main .sobreMim .desc p {
+	color: #c4c4c4;
+	font-size: 1.125rem;
+	font-weight: 300;
+	line-height: 2rem;
+	margin-bottom: 2.625rem;
+}
+
+main .sobreMim .desc strong {
+	color: #00d2df;
+} 
+
+main .sobreMim .tecnologias {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 1.875rem;
+	margin-bottom: 1.75rem;
+	cursor: pointer;
+}
+main .sobreMim .tecnologias img:hover {
+	transform: scale(1.4); 
+    transition: 0.5s all ease; 
+}
+
+/* ------------------------- Responsivo -------------------------------------------- */ 
+
+/* ------------------------------------------- Responsivo ------------------------------------------------ */ 
+
+@media screen and (max-width: 1274px) {
+	main .sobreMim {
+		gap: 5rem;
+		transition: all 0.5s;
+	}
+	main .sobreMim .desc {
+		width: 50%;
+		text-align: justify;
+	}
+	main .sobreMim .desc p {
+		text-align: justify;
+	}
+	main .sobreMim .perfil img:hover {
+		transform: none; 
+		transition: none; 
+	}
+	main .sobreMim .perfil img {
+		margin-top: 0 auto;
+	}
+	main .sobreMim h2 {
+		text-align: center;
+	}
+	main .sobreMim .perfil img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 1.563rem;
+	}
+}
+
+
+@media screen and (max-width: 1134px) {
+	main .sobreMim {
+		gap: 5rem;
+	}
+	main .sobreMim .perfil {
+		width: 17rem;
+	}
+	main .sobreMim .desc p {
+		text-align: justify;
+	}
+	main .sobreMim .perfil img:hover {
+		transform: none; 
+		transition: none; 
+	}
+	main .sobreMim h2 {
+		text-align: center;
+	}
+	main .sobreMim .perfil img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 1.563rem;
+		width: 17rem;
+		height: 17rem;
+		transition: all 0.5s;
+	}
+	main .sobreMim .perfil img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 1.563rem;
+	}
+}
+
+@media screen and (max-width: 876px) {
+	main .sobreMim {
+		padding-left: 5%;
+		gap: 3%;
+	}
+	main .sobreMim .perfil img:hover {
+		transform: none; 
+		transition: none; 
+	}
+	main .sobreMim .desc p {
+		text-align: justify;
+	}
+	main .sobreMim h2 {
+		text-align: center;
+	}
+	main .sobreMim .perfil img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 1.563rem;
+	}
+}
+
+
+@media screen and (max-width: 755px) {
+	main .sobreMim {
+		flex-direction: column;
+		gap: 1rem;
+	}
+	main .sobreMim .desc {
+		width: 90%;
+	}
+	main .sobreMim .desc p {
+		text-align: justify;
+	}
+	main .sobreMim .perfil img:hover {
+		transform: none; 
+		transition: none; 
+	}
+	main .sobreMim .perfil img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 1.563rem;
+	}
+	main .sobreMim h2 {
+		text-align: center;
+	}
+	main .sobreMim .perfil img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 1.563rem;
+	}
+}
+
+@media screen and (max-width: 690px) {
+	main .sobreMim .desc p {
+		text-align: justify;
+	}
+	main .sobreMim .perfil img:hover {
+		transform: none; 
+		transition: none; 
+	}
+	main .sobreMim h2 {
+		text-align: center;
+	}
+	main .sobreMim .perfil img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 1.563rem;
+	}
+}
+
+@media screen and (max-width: 394px) {
+	main .sobreMim .desc p {
+		text-align: justify;
+	}
+	header .apresentacao .perfil p {
+		color:#fff;
+		font-size: 1.188rem;
+	}
+	main .sobreMim h2 {
+		text-align: center;
+	}
+}
+

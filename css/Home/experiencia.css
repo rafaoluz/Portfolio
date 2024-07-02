@@ -1,0 +1,164 @@
+main .experiencia {
+    box-sizing: border-box; /* Adicione isso para garantir que padding não aumente a largura total */
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 1.625rem;
+    width: 100%;
+    padding: 6.25rem 0 6.25rem 15.5%;
+    overflow-x: hidden; /* Isso pode esconder a barra de rolagem horizontal, mas resolva o problema subjacente */
+}
+main .experiencia .divisao {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: 5%;
+}
+main .experiencia .divisao ul li {
+	width: 15.7rem;
+	height: 3.438rem;
+	color: #c4c4c4;
+	font-weight: 300;
+	font-size: 1.125rem;
+	line-height: 1.375rem;
+	border-left: 2px solid #151515;
+	display: flex;
+	align-items: center;
+	padding-left: 2rem;
+	cursor: pointer;
+}
+main .experiencia .divisao ul li:hover {
+	color: #8a2be2;
+	font-weight: bold;
+}
+main .experiencia .divisao ul .ativo {
+	border-left: 2px solid #00d2df;
+	background-color: #151515;
+	color: #fff;
+	width: 15.7rem;
+}
+main .experiencia .divisao .detalhes {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 39.75rem;
+	gap: 1.625rem;
+}
+main .experiencia .divisao .detalhes div {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+main .experiencia .divisao .detalhes div h2 {
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 1.816rem;
+}
+main .experiencia .divisao .detalhes div p {
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+main .experiencia .divisao .detalhes .local {
+	color: #00d2df;
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-weight: bold;
+}
+main .experiencia .divisao .detalhes .desc {
+	font-size: 1.125rem;
+	font-weight: 300;
+	line-height: 1.75rem;
+	color: #c4c4c4;
+}
+
+
+/* -------------------------------------- RESPONSIVO ----------------------- */
+
+
+@media screen and (max-width: 1134px) {
+	main .experiencia .divisao ul li {
+		width: 11.875rem;
+        text-align: center;
+		font-size: 0.75rem;
+	}
+	main .experiencia .divisao {
+		gap: 2%;  
+	}
+	main .experiencia .divisao .detalhes {
+		width: 30.125rem;
+	}
+	main .experiencia .divisao .detalhes div h2 {
+		font-size: 1.25rem;
+	}
+	main .experiencia h2 {
+		font-size: 1.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+	}
+}
+
+@media screen and (max-width: 876px) {
+	main .experiencia {
+		padding: 6.25rem 5%;
+		margin-bottom: 0;
+        display: flex;
+        flex-wrap: wrap;
+	}
+	main .experiencia .divisao .detalhes {
+		width: 20.125rem;
+	}
+	main .experiencia .divisao .detalhes div p {
+		font-size: 0.8rem;
+	}
+	main .experiencia .divisao .detalhes .desc {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 755px) {
+	main .experiencia {
+		width: 90%;
+	}
+	main .experiencia .divisao {
+		flex-direction: column;
+		width: 100%;
+		gap: 1rem;
+	}
+	main .experiencia .divisao ul {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 1rem;
+		width: 100%;
+	}
+	main .experiencia .divisao ul li,
+    .experiencia .divisao ul li {
+		border: none;
+		border-bottom: 2px solid #151515;
+		display: flex;
+		padding-left: 0;
+		justify-content: center;
+		align-items: center;
+		font-size: 0.875rem;
+	}
+	main .experiencia .divisao ul .ativo,
+	.gray-light .experiencia .divisao ul .ativo {
+		border: none;
+		border-bottom: 2px solid #00d2df;
+	}
+	main .experiencia .divisao .detalhes {
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 394px) {
+	main .experiencia .divisao ul li {
+		display: flex;
+		font-size: 0.75rem;
+	}
+}

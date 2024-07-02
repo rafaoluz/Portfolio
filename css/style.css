@@ -1,0 +1,12 @@
+@import "./global/global.css";
+@import "./global/header.css";
+@import "./global/footer.css";
+
+/* HOME */
+@import "./Home/sobreMim.css";
+@import "./Home/experiencia.css";
+@import "./Home/projetos.css";
+@import "./Home/contatoForm.css";
+
+
+

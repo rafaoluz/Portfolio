@@ -1,0 +1,177 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 60px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+
+.header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.header-menu a {
+    display: inline-block;
+    padding: 16px 0px;
+    position: relative;
+    color: #c4c4c4;
+    font-size: 1.125rem;
+}
+
+.header-menu a:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0px;
+    background: #00d2df;
+    margin-top: 4px;
+    transition: 0.3s;
+    position: absolute;
+}
+
+.header-menu a:hover:after {
+    width: 100%;
+}
+
+.header h2 {
+    color: #fff;
+	font-size: 2.5rem;
+}
+
+.header h2 .pontoVerde {
+    color: #00d2df;
+    font-weight: bold;
+}
+
+.header h2 .pontoRoxo {
+    color: #8a2be2;
+    font-weight: bold;
+}
+
+
+/* APRESENTAÇÂO */ 
+
+header .apresentacao {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	width: 100%;
+}
+
+header .apresentacao .perfil {
+	width: 30rem;
+	margin: 9.5rem 0 14.6rem 15.5%;
+	z-index: 2;
+}
+
+header .apresentacao .perfil h3 {
+	font-size: 1.5rem;
+	line-height: 1.813rem;
+}
+header .apresentacao .perfil h1 {
+	font-size: 4.2rem;
+	line-height: 4.813rem;
+	color: #00d2df;
+}
+header .apresentacao .perfil p {
+	font-size: 1.775rem;
+	line-height: 4rem;
+	color: #8a2be2;
+    letter-spacing: 0.1rem;
+    overflow: hidden;
+    position: relative;
+}
+.apresentacao .perfil p span .typed-text {
+	font-size: 0.5rem;
+    color: #8a2be2;
+}
+.apresentacao .perfil p span.cursor {
+    display: inline-block;
+    background-color: #8a2be2;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+.apresentacao .perfil p span.cursor.typing {
+    animation: none;
+}
+header .apresentacao .perfil .links {
+	display: flex;
+	gap: 1rem;
+}
+header .apresentacao .perfil .links a {
+	font-size: 1rem;
+	line-height: 1.188rem;
+	text-transform: none;
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin: 2rem 0 0 0;
+	padding: 0.5rem 1rem;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid transparent;
+}
+header .apresentacao .perfil .links .border-linkedin {
+	border-image: linear-gradient(45deg, #9358f7, #10d7e2 100%) 1;
+}
+
+header .apresentacao .perfil .links .border-linkedin:hover {
+	background: linear-gradient(to left, #d24074, #6518b4);
+}
+header .apresentacao .perfil .links .border-github {
+	border-image: linear-gradient(90deg, #d24074, #6518b4 100%) 1;
+}
+header .apresentacao .perfil .links .border-github:hover {
+	background: linear-gradient(to right, #9358f7, #10d7e2);
+}
+.loop {
+	background-repeat: no-repeat;
+	z-index: 1;
+	position: absolute;
+	right: 0;
+}
+
+
+
+
+/* ------------------------- Responsivo -------------------------------------------- */ 
+
+
+/* Header Responsivo */
+@media screen and (max-width: 755px) {
+    header {
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    .header-menu {
+        gap: 20px;
+    }
+}
+
+/* Apresentação Responsiva */
+@media screen and (max-width: 690px) {
+    header .apresentacao {
+        margin-bottom: 2rem;
+    }
+    header .apresentacao .perfil {
+        margin-left: 5%;
+    }
+    header .apresentacao .perfil .texto h1 {
+        font-size: 2rem;
+    }
+    header .apresentacao .perfil .texto h3 {
+        font-size: 1rem;
+    }
+}
